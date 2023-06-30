@@ -1,5 +1,7 @@
 // Write your Color component here
 
+import React from "react";
+
 const App = () => {
   return (
     <div id="container">
