@@ -1,8 +1,9 @@
 // Write your Color component here
 
-import React from "react";
+import React, { useState } from "react";
 
 const App = () => {
+  const [color, setColor] = useState(null)
   return (
     <div id="container">
       <div id="navbar">
