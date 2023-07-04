@@ -1,0 +1,16 @@
+
+:root{
+    --active-color: rgb(230, 251, 71);
+}
+
+body{
+  background-color: var(--active-color)
+}
+
+.active{
+  border: 5px solid black;
+}
+
+.navbar_el--color{
+  background-color: var(--active-color);
+}
