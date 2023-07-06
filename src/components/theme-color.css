@@ -1,16 +1,22 @@
 
 :root{
-    --active-color: rgb(230, 251, 71);
+    --active-color: rgb(39, 39, 38);
 }
 
 body{
-  background-color: var(--active-color)
-}
-
-.active{
-  border: 5px solid black;
+  background-color: var(--active-color);
+  /*
+  background-image: url("../assets/pexels-zukiman-mohamad-63558.png");
+  background-size: contain;
+  */
 }
 
 .navbar_el--color{
+
   background-color: var(--active-color);
+  z-index: 5;
+}
+
+#colors-list{
+  background-color: rgba(8, 8, 8, 0.707);
 }

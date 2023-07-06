@@ -6,7 +6,7 @@ export interface colorT{
 export const colorList: colorT[] = [
     {name:"red",colors:[[255,0,0,1]]},
     {name:"orange",colors:[[235,107,86,1]]},
-    {name:"yellow",colors:[[230, 251, 71,1]]},
+    {name:"yellow",colors:[[190, 200, 50,1]]},
     {name:"green",colors:[[0,255,0,1]]},
     {name:"blue",colors:[[0,0,255,1]]},
     {name:"violet",colors:[[85,0,135,1]]},

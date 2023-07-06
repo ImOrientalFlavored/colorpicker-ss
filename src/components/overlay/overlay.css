@@ -1,0 +1,230 @@
+@import './animate.css';
+
+.container_overlay {
+    position: relative;
+    width: 1000px;
+    height: 650px;
+    overflow: hidden;
+    border-right: 3px solid rgb(68,68,68);
+    border-bottom: 3px solid rgb(68,68,68);
+    box-shadow:
+    inset 0 0 5px 5px rgb(0, 0, 0),
+    inset 0 0 15px 5px rgb(0, 0, 0),
+    0 0 10px 5px rgba(0, 0, 0, 0.581);
+    
+}
+.overlay {
+    position: absolute;
+    max-width: 1000px;
+    width: 1000px;
+    height: 100%;
+
+    opacity: 1;
+    z-index: 0;
+}
+.overlay--night{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.overlay--background{
+    background-image: url("../../assets/Moonlit-Asteroid.png");
+    background-size: contain;
+    opacity: .2;
+    animation: move-twinkling 200s linear infinite;
+}
+
+.overlay--stars-one {
+    background-image: url("../../assets/stars.png");
+    background-size: contain;
+    background-repeat: repeat;
+    animation: twinkling 3s linear infinite;
+    left:10%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.overlay--stars-two {
+    background-image: url("../../assets/stars.png");
+    background-size: contain;
+    background-repeat: repeat;
+    animation: twinkling 2s linear infinite;
+    left:30%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.overlay--stars-three {
+    background-image: url("../../assets/stars.png");
+    background-size: contain;
+    background-repeat: repeat;
+    animation: twinkling 1s linear infinite;
+    left:50%;
+    transform: rotateX('90deg');
+    z-index: 1;
+    opacity: 1;
+}
+
+.overlay--stars-four {
+    background-image: url("../../assets/stars.png");
+    background-size: contain;
+    background-repeat: repeat;
+    animation: twinkling 1s linear infinite;
+    left:5%;
+    transform: rotateX('90deg');
+    z-index: 1;
+    opacity: 1;
+}
+
+.overlay--trey-one {
+    background-image: url("../../assets/trey-pissing1.png");
+    background-size: 22%;
+    background-repeat: no-repeat;
+    top:33%;
+    left:75%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.overlay--trey-two {
+    background-image: url("../../assets/trey-pissing2.png");
+    background-size: 22%;
+    top:33%;
+    left:75%;
+    background-repeat: no-repeat;
+    animation: twinkling-trey 2s linear infinite;
+    z-index: 1;
+    opacity: .8;
+}
+
+.overlay--constellations-one {
+    background-image: url("../../assets/Lovepik_com-401484562-gradient-color-galaxy-stars.png");
+    background-size: 50%;
+    background-repeat:no-repeat;
+    animation: twinkling-two 3s linear infinite;
+    z-index: 2;
+    opacity: 1;
+}
+
+.overlay--constellations-two {
+  
+    background-image: url("../../assets/Lovepik_com-401473745-star-galaxy.png");
+    background-size: contain;
+    background-repeat: repeat;
+    left:35%;
+    animation: twinkling-two 3s linear infinite;
+    z-index: 2;
+    opacity: 1;
+}
+
+.overlay--cloud-one {
+    background-image: url("../../assets/Cloud-Transparent.png");
+    background-size: 35%;
+    background-repeat:repeat-x;
+    animation: move-clouds 600s linear infinite;
+    z-index: 4;
+    top:5%;
+    opacity: .99;
+    filter: brightness(30%) blur(2px);
+}
+
+.overlay--cloud-two {
+    background-image: url("../../assets/Cloud-Transparent.png");
+    background-size: 35%;
+    left:1%;
+    background-repeat:repeat-x;
+    animation: move-clouds 350s linear infinite;
+    z-index: 4;
+    opacity: .99;
+    filter: brightness(70%);
+}
+
+.overlay--rain{
+    background-image: url("../../assets/raining.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    top: 58%;
+    left: 60%;
+    z-index: 10;
+    opacity: 1;
+    filter: brightness(100%);
+}
+
+.overlay--aws{
+    background-image: url("../../assets/aws1.png");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    animation: slideshow-aws 3s linear infinite;
+    top: 78%;
+    left: 70%;
+    z-index: 10;
+    opacity: 1;
+    filter: brightness(100%);
+}
+
+.overlay--aws-logo{
+    background-image: url("../../assets/aws-off.png");
+    background-size: 7.5%;
+    background-repeat: no-repeat;
+    animation: slideshow-logo 20s linear infinite;
+    top: 79%;
+    left: 73%;
+    z-index: 10;
+    opacity: 1;
+    filter: brightness(100%);
+}
+
+.overlay--texture-one {
+    background-image: url("../../assets/gradient.png");
+    z-index: 11;
+    opacity: .15;
+}
+.overlay--texture-two {
+    background-image: url("../../assets/gradient.png");
+    animation: move-clouds 200s linear infinite;
+    z-index: 10;
+    opacity: .12;
+}
+
+.overlay--foreground {
+    position:sticky;
+    background-image: url("../../assets/foreground1.png");
+    background-size: 85%;
+    bottom:0%;
+    background-repeat: no-repeat;
+
+    z-index: 10;
+    opacity: 1;
+}
+
+.overlay--fog-one {
+    background-image: url("../../assets/fog-1.png");
+    background-size: 100%;
+    background-repeat: repeat-x;
+    animation: move-clouds 200s linear infinite;
+    top: 55%;
+    z-index: 10;
+    opacity: .45;
+    }
+
+.overlay--fog-two {
+    background-image: url("../../assets/fog-2.png");
+    background-size: 80%;
+    background-repeat: repeat-x;
+    animation: move-clouds 20s linear infinite;
+    top: 55%;
+    z-index: 10;
+    opacity: .75;
+    filter: brightness(90%);
+}
+
+.overlay--speech{
+    background-image: url("../../assets/speech1.png");
+    background-size: 18%;
+    background-repeat: no-repeat;
+    animation: slideshow 50s linear infinite;
+    top: 40%;
+    left: 60%;
+    z-index: 10;
+    opacity: 1;
+    filter: brightness(100%);
+}
