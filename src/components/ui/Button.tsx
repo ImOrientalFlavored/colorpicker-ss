@@ -1,4 +1,4 @@
-interface ButtonProp{
+export interface ButtonProp{
     name: string,
     cbf:any;
     isActive: boolean;
